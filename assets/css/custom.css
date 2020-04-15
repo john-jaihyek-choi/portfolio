@@ -47,3 +47,12 @@ section.about {
     object-fit: cover;
     height: 260px;
 }
+
+.features .card:hover {
+    color: #72c393;
+    text-decoration: none;
+}
+
+.features .badge {
+    background-color: #72c393;
+}
