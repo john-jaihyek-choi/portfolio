@@ -1,0 +1,20 @@
+#hero .hero-container .social-links a {
+    font-size: 44px;
+    display: inline-block;
+    background: #373737;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+  }
+
+#hero .hero-container .social-links a:hover {
+    background: #4eb478;
+    color: #fff;
+    text-decoration: none;
+  }
