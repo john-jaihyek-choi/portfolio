@@ -24,7 +24,7 @@
     font-size: 34px;
 }
 
-section.about {
+#about {
     padding: 60px 0 0 0;
     overflow: hidden;
 }
@@ -43,7 +43,7 @@ section.about {
     position: relative;
 }
 
-.carousel img {
+.features .carousel img {
     object-fit: cover;
     height: 260px;
 }
