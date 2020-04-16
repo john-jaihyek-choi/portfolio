@@ -56,3 +56,8 @@
 .features .badge {
     background-color: #72c393;
 }
+
+.clients img {
+    object-fit: contain;
+    height: 120px;
+}
