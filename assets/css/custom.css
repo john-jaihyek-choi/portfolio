@@ -66,6 +66,10 @@
     border-radius: 50px;
 }
 
+.portfolio #webProjectMd .displayScreen::before {
+    border-radius: 35px;
+}
+
 #mobileProject .projectGif {
     position: absolute;
     top: 0;
@@ -77,15 +81,25 @@
     padding: 5%;
 }
 
-#webProject .projectGif {
+#webProjectLg .projectGif {
     position: absolute;
-    top: 7%;
+    top: 6%;
     left: 11.5%;
     z-index: 0;
     object-fit: cover;
     width: 77%;
-    height: 80%;
-    /* padding: 4%; */
+    height: 81%;
+}
+
+#webProjectMd .projectGif {
+    position: absolute;
+    top: 5%;
+    left: 3.5%;
+    z-index: 0;
+    object-fit: cover;
+    width: 93%;
+    height: 90.5%;
+    border-radius: 7px;
 }
 
 #iphoneFrame { 

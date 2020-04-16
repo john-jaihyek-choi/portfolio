@@ -399,7 +399,7 @@
       </section><!-- End Services Section -->
 
       <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio section-bg">
+      <section id="portfolio" class="portfolio section-bg justify-content-center">
         <div class="container">
 
           <div class="section-title" data-aos="fade-down">
@@ -418,9 +418,21 @@
             </div>
           </div> -->
 
+          <div class="row" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter=".filter-default" class="filter-active">All</li>
+                <li data-filter=".filter-finder">FF Memory Match</li>
+                <li data-filter=".filter-ffMemoryMatch">FF Memory Match</li>
+                <li data-filter=".filter-iwearSales">iWear Sales</li>
+              </ul>
+            </div>
+          </div>
+
           <div class="row portfolio-container">
 
-            <div class="col-lg-3 col-md-6 portfolio-item filter-app" id="mobileProject" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-finder filter-default" id="mobileProject" data-aos="fade-up" data-aos-delay="500">
+
               <div class="portfolio-wrap displayScreen">
                 <img src="assets/img/portfolio/iphoneFrame.png" class="img-fluid" alt="iphoneFrame" id="iphoneFrame">
                 <img src="assets/img/portfolio/finder.gif" alt="finderGif" class="projectGif"> <!-- optimal img size: 375 x 812 -->
@@ -434,7 +446,25 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-9 col-md-6 portfolio-item filter-app" id="webProject" data-aos="fade-left" data-aos-delay="500">
+
+            <div class="col-lg-9 col-md-6 portfolio-item filter-iwearSales filter-default" id="webProjectMd" data-aos="fade-left" data-aos-delay="500">
+
+              <div class="portfolio-wrap displayScreen">
+                <img src="assets/img/portfolio/ipadFrame.png" class="img-fluid" alt="ipadFrame" id="ipadFrame">
+                <img src="assets/img/portfolio/iWearSales.gif" alt="ffMemoryMatchGif" class="projectGif">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>App</p>
+                </div>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-6 portfolio-item filter-ffMemoryMatch filter-default" id="webProjectLg" data-aos="fade-left" data-aos-delay="500">
+
               <div class="portfolio-wrap displayScreen">
                 <img src="assets/img/portfolio/macbookFrame.png" class="img-fluid" alt="macbookFrame" id="macbookFrame">
                 <img src="assets/img/portfolio/ffMemoryMatch.gif" alt="ffMemoryMatchGif" class="projectGif">
@@ -448,6 +478,7 @@
                 </div>
               </div>
             </div>
+
             <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/ffMemoryMatch.gif" class="img-fluid" alt="ffMemoryMatchGif">
