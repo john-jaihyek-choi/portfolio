@@ -61,3 +61,7 @@
     object-fit: contain;
     height: 120px;
 }
+
+.portfolio #iphoneFrame::before {
+    border-radius: 50px;
+}
