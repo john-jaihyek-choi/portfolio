@@ -62,11 +62,11 @@
     height: 120px;
 }
 
-.portfolio #iphoneFrame::before {
+.portfolio #mobileProject .displayScreen::before {
     border-radius: 50px;
 }
 
-#projectGif {
+#mobileProject .projectGif {
     position: absolute;
     top: 0;
     left: 0;
@@ -77,7 +77,18 @@
     padding: 5%;
 }
 
-#frameImg { 
+#webProject .projectGif {
+    position: absolute;
+    top: 7%;
+    left: 11.5%;
+    z-index: 0;
+    object-fit: cover;
+    width: 77%;
+    height: 80%;
+    /* padding: 4%; */
+}
+
+#iphoneFrame { 
     position: relative;
     top:0;
     left:0;
