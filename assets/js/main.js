@@ -139,6 +139,20 @@
       portfolioIsotope.isotope({
         filter: $(this).data('filter')
       });
+
+      //custom code by John
+      if($(this).data('filter') == ".filter-default") {
+        document.querySelector('#mobileProject').classList.remove('mx-auto');
+        document.querySelector('#webProjectMd').classList.remove('mx-auto');
+        document.querySelector('#webProjectLg').classList.remove('mx-auto');
+        document.querySelector('#mobileProject').setAttribute('style', 'position: absolute; left: 0px; top: 0px;');
+        document.querySelector('#webProjectMd').setAttribute('style', 'position: absolute; left: 285px; top: 0px;');
+        document.querySelector('#webProjectLg').setAttribute('style', 'position: absolute; left: 0px; top: 665.234px;');
+        return;
+      };
+
+      document.querySelector($(this).data('filter')).removeAttribute('style');
+      document.querySelector($(this).data('filter')).classList.add('mx-auto');
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
