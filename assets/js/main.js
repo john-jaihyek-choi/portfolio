@@ -155,6 +155,9 @@
       document.querySelector('#webProjectMd').setAttribute('style', 'display: none; left: 0px; top: 0px;');
       document.querySelector('#webProjectLg').setAttribute('style', 'display: none; left: 0px; top: 0px;');
       document.querySelector($(this).data('filter')).removeAttribute('style');
+      if($(this).data('filter') === '.filter-finder') {
+        document.querySelector($(this).data('filter')).setAttribute('style', 'left: 0px; top: 0px; margin-top: 0px;');
+      }
       document.querySelector($(this).data('filter')).classList.add('mx-auto');
     });
 
