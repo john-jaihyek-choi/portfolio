@@ -109,3 +109,7 @@
     z-index:1;
     object-fit: contain
 }
+
+#mobileProject {
+    margin-top: 10%;
+}
