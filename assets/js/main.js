@@ -139,6 +139,25 @@
       portfolioIsotope.isotope({
         filter: $(this).data('filter')
       });
+
+    // CUSTOME CODE
+      if(document.querySelector('portfolio-container').getAttribute('style') === 'position: relative; height: 1355.39px;' || $(this).data('filter') === "*") {
+        document.querySelector('portfolio-container').setAttribute('style', 'position: relative; height: 1355.39px;');
+      }
+
+      if($(this).data('filter') === "*") {
+        document.querySelector('#mobileProject').classList.remove('mx-auto');
+        document.querySelector('#webProjectMd').classList.remove('mx-auto');
+        document.querySelector('#webProjectLg').classList.remove('mx-auto');
+        document.querySelector('#mobileProject').setAttribute('style', 'position: absolute; left: 0px; top: 0px;');
+        document.querySelector('#webProjectMd').setAttribute('style', 'position: absolute; left: 285px; top: 0px;');
+        document.querySelector('#webProjectLg').setAttribute('style', 'position: absolute; left: 0px; top: 665.234px;');
+        return;
+      };
+
+      document.querySelector($(this).data('filter')).classList.add('mx-auto');
+      document.querySelector($(this).data('filter')).removeAttribute('style');
+      
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
