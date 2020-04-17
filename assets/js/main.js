@@ -140,11 +140,12 @@
         filter: $(this).data('filter')
       });
 
-      //custom code by John
+      //CUSTOME CODE
+      document.querySelector('#mobileProject').classList.remove('mx-auto');
+      document.querySelector('#webProjectMd').classList.remove('mx-auto');
+      document.querySelector('#webProjectLg').classList.remove('mx-auto');
+
       if($(this).data('filter') == ".filter-default") {
-        document.querySelector('#mobileProject').classList.remove('mx-auto');
-        document.querySelector('#webProjectMd').classList.remove('mx-auto');
-        document.querySelector('#webProjectLg').classList.remove('mx-auto');
         document.querySelector('#mobileProject').setAttribute('style', 'position: absolute; left: 0px; top: 0px;');
         document.querySelector('#webProjectMd').setAttribute('style', 'position: absolute; left: 285px; top: 0px;');
         document.querySelector('#webProjectLg').setAttribute('style', 'position: absolute; left: 0px; top: 665.234px;');
