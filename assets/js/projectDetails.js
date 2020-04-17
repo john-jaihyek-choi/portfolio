@@ -1,10 +1,9 @@
 class ProjectDetails {
-    constructor (project) {
+    constructor (projectId) {
         this.viewDetails = this.viewDetails.bind(this);
-        this.project = project;
     };
 
-    viewDetails () {
-        console.log(project);
-    };
+    viewDetails (projectId) {
+        console.log(projectId);
+    }
 };
