@@ -7,7 +7,7 @@ class LandingPage {
     addHandlers () {
         for(const project of this.projects) {
             project.addEventListener('click', () => {
-                localStorage.setItem('projectId', event.target.getAttribute('data-projectId'))
+                localStorage.setItem('projectId', event.target.getAttribute('id'))
             });
         }
     }
