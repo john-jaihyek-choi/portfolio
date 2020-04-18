@@ -12,7 +12,7 @@ class LandingPage {
         }
     }
 
-    getProjectInfo() {
+    getProjectInfo () {
         fetch('../../database/projectInfo.json')
             .then(response => response.json())
             .then(data => {

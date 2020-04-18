@@ -4,7 +4,6 @@ class ProjectDetails {
         this.detailsHeader = detailsHeader;
         this.projectList = JSON.parse(localStorage.getItem('projectInfo'));
         this.projectId = localStorage.getItem('projectId')
-        this.productDetails = null;
     };
 
     header (projectDetails) {
@@ -16,9 +15,12 @@ class ProjectDetails {
         title.prepend(projectName);
     }
 
+    renderElements(projectDetails) {
+        this.header(projectDetails)
+    }
+
     init () {
         const projectDetails = this.projectList[this.projectId];
-
-        this.header(projectDetails);
+        this.renderElements(projectDetails);
     }
 };
