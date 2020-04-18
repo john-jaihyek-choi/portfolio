@@ -11,6 +11,7 @@ class ProjectDetails {
         for(const project of this.projects) {
             project.addEventListener('click', () => {
                 localStorage.setItem('projectId', event.target.getAttribute('data-projectId'))
+                window.scrollTo(0, 0);
                 location.reload();
             });
         }
