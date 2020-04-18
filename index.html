@@ -66,12 +66,18 @@
           <ul>
             <li class="drop-down"><a href="#about">About</a>
               <ul>
-                <li class=""><a href="#about">About Me</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#features">Passion</a></li>
               </ul>
             </li>
             <li><a href="#services">Skills</a></li>
-            <li><a href="#portfolio">Applications</a></li>
+            <li class="drop-down"><a href="#portfolio">Applications</a>
+              <ul>
+                <li><a class='toDetails' href="./projectDetails.html" data-projectId="project3">FF Memory Match</a></li>
+                <li><a class='toDetails' href="./projectDetails.html" data-projectId="project1">Finder</a></li>
+                <li><a class='toDetails' href="./projectDetails.html" data-projectId="project2">iWear Sales</a></li>
+              </ul>
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav><!-- .nav-menu -->
@@ -431,7 +437,7 @@
                 </div>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="./projectDetails.html" title="More Details"><i class="bx bx-link toDetails" id='project1'></i></a>
+                  <a href="./projectDetails.html" title="More Details"><i class="bx bx-link toDetails" data-projectId='project1'></i></a>
                 </div>
               </div>
             </div>
@@ -447,7 +453,7 @@
                 </div>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="./projectDetails.html" title="More Details"><i class="bx bx-link toDetails" id='project2'></i></a>
+                  <a href="./projectDetails.html" title="More Details"><i class="bx bx-link toDetails" data-projectId='project2'></i></a>
                 </div>
               </div>
             </div>
@@ -463,7 +469,7 @@
                 </div>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="./projectDetails.html" title="More Details"><i class="bx bx-link toDetails" id='project3'></i></a>
+                  <a href="./projectDetails.html" title="More Details"><i class="bx bx-link toDetails" data-projectId='project3'></i></a>
                 </div>
               </div>
             </div>
