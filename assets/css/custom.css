@@ -113,3 +113,32 @@
 #mobileProject {
     margin-top: 10%;
 }
+
+#footer .copyright, #footer .credits{
+    font-size: 10px;
+}
+
+#footer .footer-top .social-links a {
+    font-size: 35px;
+    display: inline-block;
+    background: #373737;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+#footer-links .footer-top .social-links a:hover {
+    background: #4eb478;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .logo img {
+    max-width: 30%;
+}
