@@ -1,20 +1,29 @@
 class ProjectDetails {
     constructor (detailsHeader) {
-        this.viewDetails = this.viewDetails.bind(this);
+        this.header = this.header.bind(this);
         this.detailsHeader = detailsHeader;
+        this.projectInfo = JSON.parse(localStorage.projectInfo);
     };
 
-    viewDetails () {
-        console.log(localStorage.projectId)
+    getProjectInfo() {
+        fetch('../../database/projectInfo.json')
+            .then(response => response.json())
+            .then(data => {
+                localStorage.setItem('projectInfo', JSON.stringify(data[localStorage.projectId]))
+            })
+    }
+
+    header () {
         const header = document.querySelector('#breadcrumbs');
         const title = header.querySelector('.projectName');
 
         const projectName = document.createElement('h2')
-        projectName.textContent = localStorage.projectId;
+        projectName.textContent = this.projectInfo.name;
         title.prepend(projectName);
     }
 
     init () {
-        this.viewDetails();
+        this.getProjectInfo();
+        this.header();
     }
 };

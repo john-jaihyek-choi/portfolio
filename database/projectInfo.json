@@ -1,6 +1,6 @@
 {
     "project1": {
-      "name": "projectName",
+      "name": "Finder",
       "images": ["img1", "img2", "img3"],
       "role": "team-lead",
       "url": "live demo url",
@@ -10,7 +10,7 @@
       "longDescription": "longDescription"
     },
     "project2": {
-        "name": "projectName",
+        "name": "iWear Sales",
         "images": ["img1", "img2", "img3"],
         "role": "team-lead",
         "url": "live demo url",
@@ -20,7 +20,7 @@
         "longDescription": "longDescription"
     },
     "project3": {
-        "name": "projectName",
+        "name": "FF Memory Match",
         "images": ["img1", "img2", "img3"],
         "role": "team-lead",
         "url": "live demo url",
