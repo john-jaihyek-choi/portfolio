@@ -7,5 +7,5 @@ const detailsHeader = document.querySelector('#breadcrumbs');
 const projectDetails = new ProjectDetails (detailsHeader);
 const landingPage = new LandingPage(projects);
 
-if(currentPage === 'index') landingPage.init();
+if(currentPage === 'index' || currentPage === '/') landingPage.init();
 if(currentPage === 'projectDetails') projectDetails.init();
