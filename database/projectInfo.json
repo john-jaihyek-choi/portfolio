@@ -1,0 +1,32 @@
+{
+    "project1": {
+      "name": "projectName",
+      "images": ["img1", "img2", "img3"],
+      "role": "team-lead",
+      "url": "live demo url",
+      "github": "github url",
+      "techUsed": ["JavaScript", "CSS3", "HTML5"],
+      "shortDescription": "shortDescription",
+      "longDescription": "longDescription"
+    },
+    "project2": {
+        "name": "projectName",
+        "images": ["img1", "img2", "img3"],
+        "role": "team-lead",
+        "url": "live demo url",
+        "github": "github url",
+        "techUsed": ["JavaScript", "CSS3", "HTML5"],
+        "shortDescription": "shortDescription",
+        "longDescription": "longDescription"
+    },
+    "project3": {
+        "name": "projectName",
+        "images": ["img1", "img2", "img3"],
+        "role": "team-lead",
+        "url": "live demo url",
+        "github": "github url",
+        "techUsed": ["JavaScript", "CSS3", "HTML5"],
+        "shortDescription": "shortDescription",
+        "longDescription": "longDescription"
+    }
+}
