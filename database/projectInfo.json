@@ -1,10 +1,10 @@
 {
     "project1": {
       "name": "Finder",
-      "images": ["img1", "img2", "img3"],
+      "images": ["assets/img/portfolio/ffMemoryMatch-1.gif", "assets/img/portfolio/ffMemoryMatch-2.gif", "assets/img/portfolio/ffMemoryMatch-3.png", "assets/img/portfolio/ffMemoryMatch-4.png"],
       "role": "team-lead",
-      "url": "live demo url",
-      "github": "github url",
+      "url": "https://finder.johnjhc.com",
+      "github": "https://github.com/john-jaihyek-choi/finder",
       "techUsed": ["JavaScript", "CSS3", "HTML5"],
       "shortDescription": "shortDescription",
       "longDescription": "longDescription"
@@ -12,9 +12,9 @@
     "project2": {
         "name": "iWear Sales",
         "images": ["img1", "img2", "img3"],
-        "role": "team-lead",
-        "url": "live demo url",
-        "github": "github url",
+        "role": "Solo",
+        "url": "https://ff-memory-match.johnjhc.com",
+        "github": "https://github.com/john-jaihyek-choi/iwear-sales",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
         "shortDescription": "shortDescription",
         "longDescription": "longDescription"
@@ -22,9 +22,9 @@
     "project3": {
         "name": "FF Memory Match",
         "images": ["img1", "img2", "img3"],
-        "role": "team-lead",
-        "url": "live demo url",
-        "github": "github url",
+        "role": "Solo",
+        "url": "https://iwear-sales.johnjhc.com",
+        "github": "https://github.com/john-jaihyek-choi/ff-memory-match",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
         "shortDescription": "shortDescription",
         "longDescription": "longDescription"
