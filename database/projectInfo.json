@@ -1,32 +1,35 @@
 {
     "project1": {
       "name": "Finder",
-      "images": ["img1", "img2", "img3"],
-      "role": "team-lead",
-      "url": "live demo url",
-      "github": "github url",
-      "techUsed": ["JavaScript", "CSS3", "HTML5"],
-      "shortDescription": "shortDescription",
-      "longDescription": "longDescription"
+      "images": ["assets/img/portfolio/finder-1.png", "assets/img/portfolio/finder-2.png", "assets/img/portfolio/finder-3.png", "assets/img/portfolio/finder-4.png", "assets/img/portfolio/finder-5.png", "assets/img/portfolio/finder-6.png", "assets/img/portfolio/finder-7.png", "assets/img/portfolio/finder-8.png", "assets/img/portfolio/finder-9.png", "assets/img/portfolio/finder-10.png", "assets/img/portfolio/finder-11.png"],
+      "role": "Full-Stack Developer / team-lead",
+      "compatibility": "Mobile / Web",
+      "url": "https://finder.johnjhc.com",
+      "github": "https://github.com/john-jaihyek-choi/finder",
+      "techUsed": ["JavaScript", "React", "HTML5"],
+      "shortDescription": "A Full Stack Food Search Application",
+      "longDescription": "Finder is a dynamic web application for hungry people where the user can search for food around their locations."
     },
     "project2": {
         "name": "iWear Sales",
-        "images": ["img1", "img2", "img3"],
-        "role": "team-lead",
-        "url": "live demo url",
-        "github": "github url",
+        "images": ["assets/img/portfolio/iWearSales-1.png", "assets/img/portfolio/iWearSales-2.png", "assets/img/portfolio/iWearSales-3.png", "assets/img/portfolio/iWearSales-4.png"],
+        "role": "Full-Stack Developer / Solo",
+        "compatibility": "Web / Mobile",
+        "url": "https://iwear-sales.johnjhc.com",
+        "github": "https://github.com/john-jaihyek-choi/iwear-sales",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
-        "shortDescription": "shortDescription",
+        "shortDescription": "A Full Stack E-Commerce Web Application",
         "longDescription": "longDescription"
     },
     "project3": {
-        "name": "FF Memory Match",
-        "images": ["img1", "img2", "img3"],
-        "role": "team-lead",
-        "url": "live demo url",
-        "github": "github url",
+        "name": "FF VII Memory Match",
+        "images": ["assets/img/portfolio/ffMemoryMatch-1.gif", "assets/img/portfolio/ffMemoryMatch-2.gif", "assets/img/portfolio/ffMemoryMatch-3.png", "assets/img/portfolio/ffMemoryMatch-4.png"],
+        "role": "Front-end Developer / Solo",
+        "compatibility": "Web / Mobile",
+        "url": "https://ff-memory-match.johnjhc.com",
+        "github": "https://github.com/john-jaihyek-choi/ff-memory-match",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
-        "shortDescription": "shortDescription",
+        "shortDescription": "A Dynamic Memory Match Game Application",
         "longDescription": "longDescription"
     }
 }

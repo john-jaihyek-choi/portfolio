@@ -1,6 +1,5 @@
 class ProjectDetails {
     constructor (detailsHeader, projects) {
-        this.header = this.header.bind(this);
         this.detailsHeader = detailsHeader;
         this.projectList = JSON.parse(localStorage.getItem('projectInfo'));
         this.projectId = localStorage.getItem('projectId')
@@ -26,8 +25,77 @@ class ProjectDetails {
         title.prepend(projectName);
     }
 
+    carousel (projectDetails) {
+        const carouselContainer = document.querySelector('.portfolio-details-carousel');
+
+        for(let i = 0; i < projectDetails.images.length; i++) {
+            const imgElement = document.createElement('img');
+            imgElement.setAttribute('src', projectDetails.images[i]);
+            imgElement.setAttribute('alt', projectDetails.images[i]);
+            imgElement.classList.add('img-fluid');
+
+            carouselContainer.append(imgElement);
+        }
+
+        // Portfolio details carousel
+        $(".portfolio-details-carousel").owlCarousel({
+            autoplay: true,
+            dots: true,
+            loop: true,
+            items: 1
+          });
+    }
+
+    infoCard (projectDetails) {
+        const role = document.querySelector('#role');
+        const techStack = document.querySelector('#techStack');
+        const compatibility = document.querySelector('#compatibility');
+        const demoUrl = document.querySelector('#demoUrl');
+        const github = document.querySelector('#github');
+
+        role.append(projectDetails.role);
+
+        for(let i = 0; i < projectDetails.techUsed.length; i++) {
+            if(i === projectDetails.techUsed.length - 1) {
+                techStack.append(projectDetails.techUsed[i]);
+            } else {
+                techStack.append(projectDetails.techUsed[i],", ");
+            }
+        }
+
+        compatibility.append(projectDetails.compatibility);
+
+        const demoAnchor = document.createElement('a')
+        demoAnchor.setAttribute('href', projectDetails.url);
+        demoAnchor.setAttribute('target', "_blank")
+        demoAnchor.append(projectDetails.url);
+        demoUrl.append(demoAnchor);
+
+        const githubAnchor = document.createElement('a');
+        githubAnchor.setAttribute('href', projectDetails.github);
+        githubAnchor.setAttribute('target', "_blank")
+        githubAnchor.append(projectDetails.github);
+        github.append(githubAnchor);
+    }
+
+    description (projectDetails) {
+        console.log(projectDetails);
+        const descriptionContainer = document.querySelector('.portfolio-description');
+
+        const shortDescription = document.createElement('h2');
+        shortDescription.textContent = projectDetails.shortDescription;
+
+        const detailDescription = document.createElement('p');
+        detailDescription.textContent = projectDetails.longDescription;
+
+        descriptionContainer.append(shortDescription, detailDescription);
+    }
+
     renderElements(projectDetails) {
-        this.header(projectDetails)
+        this.header(projectDetails);
+        this.carousel(projectDetails);
+        this.infoCard(projectDetails);
+        this.description(projectDetails);
     }
 
     init () {
