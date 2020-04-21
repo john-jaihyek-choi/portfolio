@@ -24,7 +24,9 @@
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
         "shortDescription": "A Full Stack E-Commerce Web Application",
         "longDescription": [
-
+            "iWear Sales is a full-stack Node.js and React.js E-Commerce web application. This project helped me grasp the basics of Node.js, React.js, and Relational Database.",
+            "The main challenge of this application was in utilizing life cycle methods of React and creating endpoints on the back-end to be prepared for front-end’s fetch calls. Also, I had to set up a Relational Database schema with PostgreSQL to make sure to store different cart items based on the user’s session. To get this to work, I had to set up an endpoint which stores the data in to different tables of the database and to store userId to the req.session for the user to have their unique ID based on user’s sessions.",
+            "This project was a great introductory to full-stack development using React, Node, and RDMS (Relational Database Management System). I learned the basics of React including states, components, and some of its life cycle methods. Also learned how to set up and connect database schema."
           ]
     },
     "project3": {
