@@ -8,7 +8,11 @@
       "github": "https://github.com/john-jaihyek-choi/finder",
       "techUsed": ["JavaScript", "React", "HTML5"],
       "shortDescription": "A Full Stack Food Search Application",
-      "longDescription": "Finder is a dynamic web application for hungry people where the user can search for food around their locations."
+      "longDescription": [
+        "Finder is a dynamic full-stack web application which allows its users to search for food around user input locations. This project is mainly designed with CSS3 and Bootstrap 4 and structured with stateful React components for User Interface/Experience (UI/UX) optimization and mobile-responsiveness.",
+        "One of the main challenges of this project was in fetching multiple Yelp API requests using Node Fetch to make sure that all of the essential information is called and stored in the database. Because the list of called restaurants is initially stored in the database schema, it was then important to filter existing restaurants from the restaurants table with correct SQL query. In the process, existing restaurants in the database schema was updated with update SQL query then once the database has been updated, restaurant information were called so that the collected data could be used when Fetch POST request is made to the “likedRestaurants” table for it to be populated on the “liked restaurants” page.",
+        "By programming this application, I have built solid knowledge in sending request to the server with proper information from the front-end and creating back-end endpoints to listen for client request to send requested data back to the client. Also, use of different React components gave me a solid understanding of React’s states and life cycle methods."
+      ]
     },
     "project2": {
         "name": "iWear Sales",
@@ -19,7 +23,9 @@
         "github": "https://github.com/john-jaihyek-choi/iwear-sales",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
         "shortDescription": "A Full Stack E-Commerce Web Application",
-        "longDescription": "longDescription"
+        "longDescription": [
+
+          ]
     },
     "project3": {
         "name": "FF VII Memory Match",
@@ -30,6 +36,8 @@
         "github": "https://github.com/john-jaihyek-choi/ff-memory-match",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
         "shortDescription": "A Dynamic Memory Match Game Application",
-        "longDescription": "longDescription"
+        "longDescription": [
+            
+          ]
     }
 }
