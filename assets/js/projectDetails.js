@@ -1,7 +1,5 @@
 class ProjectDetails {
     constructor (detailsHeader, projects) {
-        this.header = this.header.bind(this);
-        this.carousel = this.carousel.bind(this);
         this.detailsHeader = detailsHeader;
         this.projectList = JSON.parse(localStorage.getItem('projectInfo'));
         this.projectId = localStorage.getItem('projectId')
@@ -77,10 +75,24 @@ class ProjectDetails {
         github.append(githubAnchor);
     }
 
+    description (projectDetails) {
+        console.log(projectDetails);
+        const descriptionContainer = document.querySelector('.portfolio-description');
+
+        const shortDescription = document.createElement('h2');
+        shortDescription.textContent = projectDetails.shortDescription;
+
+        const detailDescription = document.createElement('p');
+        detailDescription.textContent = projectDetails.longDescription;
+
+        descriptionContainer.append(shortDescription, detailDescription);
+    }
+
     renderElements(projectDetails) {
         this.header(projectDetails);
         this.carousel(projectDetails);
         this.infoCard(projectDetails);
+        this.description(projectDetails);
     }
 
     init () {
