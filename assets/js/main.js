@@ -140,7 +140,7 @@
         filter: $(this).data('filter')
       });
       
-      // CUSTOME CODE
+      // CUSTOM CODE
       const portfolioContainerHeight = document.querySelector('.portfolio-container').clientHeight;
       const mobileProjectWidth = document.querySelector('#mobileProject').clientWidth;
       const webProjectLgHeight = document.querySelector('#webProjectLg').clientHeight;
