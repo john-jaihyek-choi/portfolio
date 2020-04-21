@@ -6,7 +6,7 @@
       "compatibility": "Mobile / Web",
       "url": "https://finder.johnjhc.com",
       "github": "https://github.com/john-jaihyek-choi/finder",
-      "techUsed": ["JavaScript", "React", "HTML5"],
+      "techUsed": ["JavaScript", "React", "HTML5", "CSS3", "Bootstrap 4", "Node.js", "Express.js", "PostgreSQL", "Fetch", "Media Queries", "APIs"],
       "shortDescription": "A Full Stack Food Search Application",
       "longDescription": [
         "Finder is a dynamic full-stack web application which allows its users to search for food around user input locations. This project is mainly designed with CSS3 and Bootstrap 4 and structured with stateful React components for User Interface/Experience (UI/UX) optimization and mobile-responsiveness.",
@@ -21,7 +21,7 @@
         "compatibility": "Web / Mobile",
         "url": "https://iwear-sales.johnjhc.com",
         "github": "https://github.com/john-jaihyek-choi/iwear-sales",
-        "techUsed": ["JavaScript", "CSS3", "HTML5"],
+        "techUsed": ["JavaScript", "React", "HTML5", "CSS3", "Bootstrap 4", "Node.js", "Express.js", "PostgreSQL", "Fetch", "Media Queries", "APIs"],
         "shortDescription": "A Full Stack E-Commerce Web Application",
         "longDescription": [
             "iWear Sales is a full-stack Node.js and React.js E-Commerce web application. This project helped me grasp the basics of Node.js, React.js, and Relational Database.",
@@ -36,7 +36,7 @@
         "compatibility": "Web / Mobile",
         "url": "https://ff-memory-match.johnjhc.com",
         "github": "https://github.com/john-jaihyek-choi/ff-memory-match",
-        "techUsed": ["JavaScript", "CSS3", "HTML5"],
+        "techUsed": ["JavaScript", "HTML5", "CSS3", "Media Queries"],
         "shortDescription": "A Dynamic Memory Match Game",
         "longDescription": [
             "FF VII Memory Match Game is a Final Fantasy VII themed static web application that dynamically creates card board as user progresses through each stage. This application is designed with HTML 5 and CSS3, and the functionality of the game was set mainly using Vanilla JavaScript along with some jQuery.",
