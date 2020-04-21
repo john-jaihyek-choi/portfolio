@@ -3,18 +3,19 @@
       "name": "Finder",
       "images": ["assets/img/portfolio/ffMemoryMatch-1.gif", "assets/img/portfolio/ffMemoryMatch-2.gif", "assets/img/portfolio/ffMemoryMatch-3.png", "assets/img/portfolio/ffMemoryMatch-4.png"],
       "role": "team-lead",
+      "compatibility": "Web/Mobile",
       "url": "https://finder.johnjhc.com",
       "github": "https://github.com/john-jaihyek-choi/finder",
-      "techUsed": ["JavaScript", "React", "HTML5", "CSS3", "Bootstrap", "PostgreSQL", "Node.js", "Express.js", "Fetch", "Media Queries", "APIs"],
-      "techImgUrl": [],
-      "shortDescription": "shortDescription  ",
+      "techUsed": ["JavaScript", "React", "HTML5"],
+      "shortDescription": "A web and mobile responsive memory matching game",
       "longDescription": "longDescription"
     },
     "project2": {
         "name": "iWear Sales",
         "images": ["img1", "img2", "img3"],
         "role": "Solo",
-        "url": "https://ff-memory-match.johnjhc.com",
+        "compatibility": "Web/Mobile",
+        "url": "https://iwear-sales.johnjhc.com",
         "github": "https://github.com/john-jaihyek-choi/iwear-sales",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
         "shortDescription": "shortDescription",
@@ -24,10 +25,11 @@
         "name": "FF Memory Match",
         "images": ["img1", "img2", "img3"],
         "role": "Solo",
-        "url": "https://iwear-sales.johnjhc.com",
+        "compatibility": "Web/Mobile",
+        "url": "https://ff-memory-match.johnjhc.com",
         "github": "https://github.com/john-jaihyek-choi/ff-memory-match",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
         "shortDescription": "shortDescription",
         "longDescription": "longDescription"
-    }
+    },
 }

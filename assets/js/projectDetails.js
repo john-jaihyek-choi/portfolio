@@ -1,7 +1,7 @@
 class ProjectDetails {
     constructor (detailsHeader, projects) {
         this.header = this.header.bind(this);
-        this.carouselImg = this.carouselImg.bind(this);
+        this.carousel = this.carousel.bind(this);
         this.detailsHeader = detailsHeader;
         this.projectList = JSON.parse(localStorage.getItem('projectInfo'));
         this.projectId = localStorage.getItem('projectId')
@@ -27,7 +27,7 @@ class ProjectDetails {
         title.prepend(projectName);
     }
 
-    carouselImg (projectDetails) {
+    carousel (projectDetails) {
         const carouselContainer = document.querySelector('.portfolio-details-carousel');
 
         for(let i = 0; i < projectDetails.images.length; i++) {
@@ -38,7 +38,8 @@ class ProjectDetails {
 
             carouselContainer.append(imgElement);
         }
-        
+
+        // Portfolio details carousel
         $(".portfolio-details-carousel").owlCarousel({
             autoplay: true,
             dots: true,
@@ -47,9 +48,39 @@ class ProjectDetails {
           });
     }
 
+    infoCard (projectDetails) {
+        const techStack = document.querySelector('#techStack');
+        const compatibility = document.querySelector('#compatibility');
+        const demoUrl = document.querySelector('#demoUrl');
+        const github = document.querySelector('#github');
+
+        for(let i = 0; i < projectDetails.techUsed.length; i++) {
+            if(i === projectDetails.techUsed.length - 1) {
+                techStack.append(projectDetails.techUsed[i]);
+            } else {
+                techStack.append(projectDetails.techUsed[i],", ");
+            }
+        }
+
+        compatibility.append(projectDetails.compatibility);
+
+        const demoAnchor = document.createElement('a')
+        demoAnchor.setAttribute('href', projectDetails.url);
+        demoAnchor.setAttribute('target', "_blank")
+        demoAnchor.append(projectDetails.url);
+        demoUrl.append(demoAnchor);
+
+        const githubAnchor = document.createElement('a');
+        githubAnchor.setAttribute('href', projectDetails.github);
+        githubAnchor.setAttribute('target', "_blank")
+        githubAnchor.append(projectDetails.github);
+        github.append(githubAnchor);
+    }
+
     renderElements(projectDetails) {
         this.header(projectDetails);
-        this.carouselImg(projectDetails);
+        this.carousel(projectDetails);
+        this.infoCard(projectDetails);
     }
 
     init () {
