@@ -143,10 +143,8 @@
       // CUSTOM CODE
       const portfolioContainerHeight = document.querySelector('.portfolio-container').clientHeight;
       const mobileProjectWidth = document.querySelector('#mobileProject').clientWidth;
-      const mobileProjectHeight = document.querySelector('#mobileProject .displayScreen').clientHeight;
       const webProjectLgHeight = document.querySelector('#webProjectLg').clientHeight;
-      console.log(mobileProjectHeight);
-      console.log(portfolioContainerHeight);
+
       if($(this).data('filter') === "*") {
         document.querySelector('#mobileProject').classList.remove('mx-auto');
         document.querySelector('#webProjectMd').classList.remove('mx-auto');
