@@ -47,10 +47,13 @@ class ProjectDetails {
     }
 
     infoCard (projectDetails) {
+        const role = document.querySelector('#role');
         const techStack = document.querySelector('#techStack');
         const compatibility = document.querySelector('#compatibility');
         const demoUrl = document.querySelector('#demoUrl');
         const github = document.querySelector('#github');
+
+        role.append(projectDetails.role);
 
         for(let i = 0; i < projectDetails.techUsed.length; i++) {
             if(i === projectDetails.techUsed.length - 1) {
