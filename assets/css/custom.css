@@ -142,3 +142,13 @@
 #footer .logo img {
     max-width: 30%;
 }
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+    bottom: calc(43% - 50px);
+}
+
+.portfolio .portfolio-wrap .projectLinks a, .portfolio .portfolio-wrap .projectLinks span {
+    color: white;
+    font-size: 16px;
+}

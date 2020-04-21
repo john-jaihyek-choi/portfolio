@@ -79,7 +79,7 @@ class ProjectDetails {
         const githubAnchor = document.createElement('a');
         githubAnchor.setAttribute('href', projectDetails.github);
         githubAnchor.setAttribute('target', "_blank")
-        githubAnchor.append('github.com/john-jaihyek-choi.com');
+        githubAnchor.append('github.com/john-jaihyek-choi');
         github.append(githubAnchor);
     }
 
