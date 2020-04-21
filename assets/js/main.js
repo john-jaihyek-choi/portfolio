@@ -140,16 +140,20 @@
         filter: $(this).data('filter')
       });
       
-    // CUSTOME CODE
+      // CUSTOME CODE
+      const portfolioContainerHeight = document.querySelector('.portfolio-container').clientHeight;
+      const mobileProjectWidth = document.querySelector('#mobileProject').clientWidth;
+      const webProjectLgHeight = document.querySelector('#webProjectLg').clientHeight;
+
       if($(this).data('filter') === "*") {
         document.querySelector('#mobileProject').classList.remove('mx-auto');
         document.querySelector('#webProjectMd').classList.remove('mx-auto');
         document.querySelector('#webProjectLg').classList.remove('mx-auto');
         document.querySelector('#mobileProject').setAttribute('style', 'position: absolute; left: 0px; top: 0px;');
-        document.querySelector('#webProjectMd').setAttribute('style', 'position: absolute; left: 285px; top: 0px;');
-        document.querySelector('#webProjectLg').setAttribute('style', 'position: absolute; left: 0px; top: 665.234px;');
-        return;
-      };
+        document.querySelector('#webProjectMd').setAttribute('style', `position: absolute; left: ${mobileProjectWidth}px;`);
+        document.querySelector('#webProjectLg').setAttribute('style', `position: absolute; left: 0px; top: ${portfolioContainerHeight-webProjectLgHeight}px`);
+        return
+      }
       
       document.querySelector('#mobileProject').setAttribute('style', 'display: none; left: 0px; top: 0px;');
       document.querySelector('#webProjectMd').setAttribute('style', 'display: none; left: 0px; top: 0px;');
