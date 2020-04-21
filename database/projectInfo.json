@@ -5,8 +5,9 @@
       "role": "team-lead",
       "url": "https://finder.johnjhc.com",
       "github": "https://github.com/john-jaihyek-choi/finder",
-      "techUsed": ["JavaScript", "CSS3", "HTML5"],
-      "shortDescription": "shortDescription",
+      "techUsed": ["JavaScript", "React", "HTML5", "CSS3", "Bootstrap", "PostgreSQL", "Node.js", "Express.js", "Fetch", "Media Queries", "APIs"],
+      "techImgUrl": [],
+      "shortDescription": "shortDescription  ",
       "longDescription": "longDescription"
     },
     "project2": {

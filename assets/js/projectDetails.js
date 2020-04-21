@@ -1,6 +1,7 @@
 class ProjectDetails {
     constructor (detailsHeader, projects) {
         this.header = this.header.bind(this);
+        this.carouselImg = this.carouselImg.bind(this);
         this.detailsHeader = detailsHeader;
         this.projectList = JSON.parse(localStorage.getItem('projectInfo'));
         this.projectId = localStorage.getItem('projectId')
@@ -26,8 +27,29 @@ class ProjectDetails {
         title.prepend(projectName);
     }
 
+    carouselImg (projectDetails) {
+        const carouselContainer = document.querySelector('.portfolio-details-carousel');
+
+        for(let i = 0; i < projectDetails.images.length; i++) {
+            const imgElement = document.createElement('img');
+            imgElement.setAttribute('src', projectDetails.images[i]);
+            imgElement.setAttribute('alt', projectDetails.images[i]);
+            imgElement.classList.add('img-fluid');
+
+            carouselContainer.append(imgElement);
+        }
+        
+        $(".portfolio-details-carousel").owlCarousel({
+            autoplay: true,
+            dots: true,
+            loop: true,
+            items: 1
+          });
+    }
+
     renderElements(projectDetails) {
-        this.header(projectDetails)
+        this.header(projectDetails);
+        this.carouselImg(projectDetails);
     }
 
     init () {
