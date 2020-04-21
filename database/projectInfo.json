@@ -8,7 +8,11 @@
       "github": "https://github.com/john-jaihyek-choi/finder",
       "techUsed": ["JavaScript", "React", "HTML5"],
       "shortDescription": "A Full Stack Food Search Application",
-      "longDescription": "Finder is a dynamic web application for hungry people where the user can search for food around their locations."
+      "longDescription": [
+        "Finder is a dynamic full-stack web application which allows its users to search for food around user input locations. This project is mainly designed with CSS3 and Bootstrap 4 and structured with stateful React components for User Interface/Experience (UI/UX) optimization and mobile-responsiveness.",
+        "One of the main challenges of this project was in fetching multiple Yelp API requests using Node Fetch to make sure that all of the essential information is called and stored in the database. Because the list of called restaurants is initially stored in the database schema, it was then important to filter existing restaurants from the restaurants table with correct SQL query. In the process, existing restaurants in the database schema was updated with update SQL query then once the database has been updated, restaurant information were called so that the collected data could be used when Fetch POST request is made to the “likedRestaurants” table for it to be populated on the “liked restaurants” page.",
+        "By programming this application, I have built solid knowledge in sending request to the server with proper information from the front-end and creating back-end endpoints to listen for client request to send requested data back to the client. Also, use of different React components gave me a solid understanding of React’s states and life cycle methods."
+      ]
     },
     "project2": {
         "name": "iWear Sales",
@@ -19,7 +23,11 @@
         "github": "https://github.com/john-jaihyek-choi/iwear-sales",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
         "shortDescription": "A Full Stack E-Commerce Web Application",
-        "longDescription": "longDescription"
+        "longDescription": [
+            "iWear Sales is a full-stack Node.js and React.js E-Commerce web application. This project helped me grasp the basics of Node.js, React.js, and Relational Database.",
+            "The main challenge of this application was in utilizing life cycle methods of React and creating endpoints on the back-end to be prepared for front-end’s fetch calls. Also, I had to set up a Relational Database schema with PostgreSQL to make sure to store different cart items based on the user’s session. To get this to work, I had to set up an endpoint which stores the data in to different tables of the database and to store userId to the req.session for the user to have their unique ID based on user’s sessions.",
+            "This project was a great introductory to full-stack development using React, Node, and RDMS (Relational Database Management System). I learned the basics of React including states, components, and some of its life cycle methods. Also learned how to set up and connect database schema."
+          ]
     },
     "project3": {
         "name": "FF VII Memory Match",
@@ -29,7 +37,11 @@
         "url": "https://ff-memory-match.johnjhc.com",
         "github": "https://github.com/john-jaihyek-choi/ff-memory-match",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
-        "shortDescription": "A Dynamic Memory Match Game Application",
-        "longDescription": "longDescription"
+        "shortDescription": "A Dynamic Memory Match Game",
+        "longDescription": [
+            "FF VII Memory Match Game is a Final Fantasy VII themed static web application that dynamically creates card board as user progresses through each stage. This application is designed with HTML 5 and CSS3, and the functionality of the game was set mainly using Vanilla JavaScript along with some jQuery.",
+            "The main challenge in building this application was having the cardboards to be dynamically populated on different stages throughout the game. For the cardboard to populate different numbers of cards on the board, I utilized predefined set of arrays for each stage. Upon completion of each stage, event handlers on modal options called different function for different stages. For improved user interaction, user is given two different character selection on the title screen. Each characters, during the game, makes different action which resembles correct/incorrect guesses of the user.",
+            "Through building this application, I have built strong foundation in JavaScript, mainly dynamic DOM creation and manipulation."
+          ]
     }
 }

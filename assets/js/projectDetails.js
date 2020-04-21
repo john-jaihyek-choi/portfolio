@@ -84,11 +84,14 @@ class ProjectDetails {
 
         const shortDescription = document.createElement('h2');
         shortDescription.textContent = projectDetails.shortDescription;
+        descriptionContainer.append(shortDescription)
 
-        const detailDescription = document.createElement('p');
-        detailDescription.textContent = projectDetails.longDescription;
+        for(let i = 0; i < projectDetails.longDescription.length; i++) {
+            const detailDescription = document.createElement('p');
+            detailDescription.textContent = projectDetails.longDescription[i];
 
-        descriptionContainer.append(shortDescription, detailDescription);
+            descriptionContainer.append(detailDescription);
+        }
     }
 
     renderElements(projectDetails) {
