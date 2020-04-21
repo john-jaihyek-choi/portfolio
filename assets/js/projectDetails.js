@@ -56,6 +56,10 @@ class ProjectDetails {
         role.append(projectDetails.role);
 
         for(let i = 0; i < projectDetails.techUsed.length; i++) {
+            if(i % 6 === 0) {
+                const lineBreak = document.createElement('br');
+                techStack.append(lineBreak);
+            }
             if(i === projectDetails.techUsed.length - 1) {
                 techStack.append(projectDetails.techUsed[i]);
             } else {
@@ -68,13 +72,14 @@ class ProjectDetails {
         const demoAnchor = document.createElement('a')
         demoAnchor.setAttribute('href', projectDetails.url);
         demoAnchor.setAttribute('target', "_blank")
-        demoAnchor.append(projectDetails.url);
+        const url = projectDetails.url
+        demoAnchor.append(projectDetails.url.substring(url.indexOf('//')+2));
         demoUrl.append(demoAnchor);
 
         const githubAnchor = document.createElement('a');
         githubAnchor.setAttribute('href', projectDetails.github);
         githubAnchor.setAttribute('target', "_blank")
-        githubAnchor.append(projectDetails.github);
+        githubAnchor.append('github.com/john-jaihyek-choi.com');
         github.append(githubAnchor);
     }
 
