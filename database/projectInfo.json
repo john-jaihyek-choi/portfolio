@@ -37,9 +37,11 @@
         "url": "https://ff-memory-match.johnjhc.com",
         "github": "https://github.com/john-jaihyek-choi/ff-memory-match",
         "techUsed": ["JavaScript", "CSS3", "HTML5"],
-        "shortDescription": "A Dynamic Memory Match Game Application",
+        "shortDescription": "A Dynamic Memory Match Game",
         "longDescription": [
-            
+            "FF VII Memory Match Game is a Final Fantasy VII themed static web application that dynamically creates card board as user progresses through each stage. This application is designed with HTML 5 and CSS3, and the functionality of the game was set mainly using Vanilla JavaScript along with some jQuery.",
+            "The main challenge in building this application was having the cardboards to be dynamically populated on different stages throughout the game. For the cardboard to populate different numbers of cards on the board, I utilized predefined set of arrays for each stage. Upon completion of each stage, event handlers on modal options called different function for different stages. For improved user interaction, user is given two different character selection on the title screen. Each characters, during the game, makes different action which resembles correct/incorrect guesses of the user.",
+            "Through building this application, I have built strong foundation in JavaScript, mainly dynamic DOM creation and manipulation."
           ]
     }
 }
