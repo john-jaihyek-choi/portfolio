@@ -68,13 +68,14 @@ class ProjectDetails {
         const demoAnchor = document.createElement('a')
         demoAnchor.setAttribute('href', projectDetails.url);
         demoAnchor.setAttribute('target', "_blank")
-        demoAnchor.append(projectDetails.url);
+        const url = projectDetails.url
+        demoAnchor.append(projectDetails.url.substring(url.indexOf('//')+2));
         demoUrl.append(demoAnchor);
 
         const githubAnchor = document.createElement('a');
         githubAnchor.setAttribute('href', projectDetails.github);
         githubAnchor.setAttribute('target', "_blank")
-        githubAnchor.append(projectDetails.github);
+        githubAnchor.append('Github');
         github.append(githubAnchor);
     }
 
