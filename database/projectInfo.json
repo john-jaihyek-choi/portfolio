@@ -15,7 +15,7 @@
       ]
     },
     "project2": {
-        "name": "iWear Sales",
+        "name": "iWear Sales (Under Production)",
         "images": ["assets/img/portfolio/iWearSales-1.png", "assets/img/portfolio/iWearSales-2.png", "assets/img/portfolio/iWearSales-3.png", "assets/img/portfolio/iWearSales-4.png"],
         "role": "Full-Stack Developer / Solo",
         "compatibility": "Web / Mobile",
