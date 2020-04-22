@@ -1,7 +1,8 @@
 class LandingPage {
-    constructor (projects) {
+    constructor (projects, contactRender) {
         this.addHandlers = this.addHandlers.bind(this);
         this.projects = projects
+        this.contactRender = contactRender
     };
 
     addHandlers () {
@@ -23,5 +24,6 @@ class LandingPage {
     init () {
         this.addHandlers();
         this.getProjectInfo();
+        this.contactRender();
     };
 };

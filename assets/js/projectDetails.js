@@ -1,9 +1,10 @@
 class ProjectDetails {
-    constructor (detailsHeader, projects) {
+    constructor (detailsHeader, projects, contactRender) {
         this.detailsHeader = detailsHeader;
         this.projectList = JSON.parse(localStorage.getItem('projectInfo'));
         this.projectId = localStorage.getItem('projectId')
         this.projects = projects
+        this.contactRender = contactRender
     };
 
     addHandlers () {
@@ -110,5 +111,6 @@ class ProjectDetails {
         const projectDetails = this.projectList[this.projectId];
         this.addHandlers();
         this.renderElements(projectDetails);
+        this.contactRender();
     }
 };
